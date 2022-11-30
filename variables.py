@@ -10,6 +10,8 @@ API_ID = int(os.environ.get("API_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
+PORT = os.environ.get("PORT", "8080")
+
 PICS = os.environ.get("PICS", "https://telegra.ph/file/34fd203eb89fd747ffb57.jpg").split()
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '900873119').split()]
